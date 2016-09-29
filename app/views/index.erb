@@ -1,0 +1,14 @@
+<h1 id="task-header"> All Tasks</h1>
+
+<div class="wrapper-table">
+  <table id="task-table">
+    <caption class="back"><a href="/"><<</a></caption
+    <tr><th>Task</td> <th>Description</th></tr>
+    <% @tasks.each do |task| %>
+      <tr>
+        <td id="task-table-task"><a href="/tasks/<%= task.id %>"><%= task.title %></a></td>
+        <td><%= task.description %></td>
+      </tr
+      <% end %>
+  </table>
+</div>
