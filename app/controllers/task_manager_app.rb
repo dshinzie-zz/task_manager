@@ -1,4 +1,5 @@
 require_relative '../models/task.rb'
+require 'pry'
 
 class TaskManagerApp < Sinatra::Base
   set :root, File.expand_path("..", __dir__)

@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="/css/bootstrap.css">
   <link rel="stylesheet" href="/application.css">
   <title>Task Manager</title>
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function (){
+    validate();
+    $('#enter-text, #enter-description').change(validate);
+});
+
+function validate(){
+    if ($('#enter-text').val().length > 0 &&
+        $('#enter-description').val().length  > 0) {
+          $("input[type=submit]").prop("disabled", false);
+        }
+    else {
+        $("input[type=submit]").prop("disabled", true);
+    }
+}
+</script>
 <body>
   <div id="background_container">
     <div class="container">

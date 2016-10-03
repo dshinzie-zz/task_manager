@@ -1,5 +1,9 @@
 
 /*Dashboard*/
+body
+{
+  font-family: serif;
+}
 
 #welcome, #menu li a, #task-header, #enter-task
 {
@@ -17,16 +21,18 @@
   margin: 0px auto;
   padding: 10% 0% 10% 0%;
   font-size: 40px;
+
 }
 
-#menu ul, #welcome, #task-header
+#welcome, #task-header
 {
   text-align: center;
 }
 
-#menu li, #menu li a
+.navbar, .navbar li a
 {
-  display: inline-block;
+  font-size: 20px;
+  color: #3C3C3C;
 }
 
 #menu li a
@@ -35,9 +41,15 @@
   font-size: 16px;
 }
 
-#menu li a:hover, #task-table td a:hover, .back a:hover
+.navbar li a:hover, #task-table td a:hover, .back a:hover
 {
   color: #7EC0EE;
+  background-color: white;
+}
+
+.navbar-nav > li{
+  margin-left:50px;
+  margin-right:50px;
 }
 
 #wrapper-menu
