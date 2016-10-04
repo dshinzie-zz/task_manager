@@ -3,6 +3,9 @@
 body
 {
   font-family: serif;
+  background-image: url('/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #welcome, #menu li a, #task-header, #enter-task
@@ -35,16 +38,11 @@ body
   color: #3C3C3C;
 }
 
-#menu li a
-{
-  padding: 1em 3em 1em 1em;
-  font-size: 16px;
-}
 
 .navbar li a:hover, #task-table td a:hover, .back a:hover
 {
   color: #7EC0EE;
-  background-color: white;
+  background-color: transparent;
 }
 
 .navbar-nav > li{
@@ -153,6 +151,7 @@ body
   width: 100%;
   margin-bottom: 20px;
   border: 0;
+  background-color: transparent;
 }
 
 #enter-description
@@ -160,14 +159,15 @@ body
   width: 100%;
   height: 200px;
   border: 0;
+  background-color: transparent;
 }
 
 #enter-submit
 {
   color: #a7a3a3;
-  background-color: white;
   font-size: 14px;
   border: 0;
+  background-color: transparent;
 }
 
 #task-new
