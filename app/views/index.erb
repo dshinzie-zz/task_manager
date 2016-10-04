@@ -7,7 +7,11 @@
     <% @tasks.each do |task| %>
       <tr>
         <td id="task-table-task"><a href="/tasks/<%= task.id %>"><%= task.title %></a></td>
-        <td><%= task.description %></td>
+        <td><a href="/tasks/<%= task.id %>/edit"><%= task.description %></a></td>
+        <td class="no-column" style="border-style:hidden;"><form action="/tasks/<%= task.id %>" method="POST">
+          <input type="hidden" name="_method" value="DELETE">
+          <input type="submit" value="delete" class="delete"/>
+        </form></td>
       </tr
       <% end %>
   </table>
